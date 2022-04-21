@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ADVANCE JS</title>
+    <script>
+
+        // function prom(complete) {
+        //     return new Promise(function (pass, fail) {
+        //         console.log("Fetching data , please wait")
+        //         setTimeout(() => {
+        //             if (complete) {
+        //                 pass("SUCCESS");
+        //             }
+        //             else {
+        //                 fail("UNSUCCESS");
+        //             }
+        //         }, 1500)
+        //     });
+        // }
+
+        // prom(true).then((result) => {
+        //     console.log(result);
+        // }).catch((error) => {
+        //     console.log(error);
+        // });
+
+
+        function prom(a, b) {
+            return new Promise(function (pass, fail) {
+                console.log("Fetching data , please wait");
+                let c = a / b;
+                setTimeout(() => {
+                    if (a, b) {
+                        pass(`THE ANSWER IS ${c}`);
+                    }
+                    else {
+                        fail("FAILES TO CALCULATE");
+                    }
+                }, 1500)
+            });
+        }
+
+        prom(5, 0).then((result) => {
+            console.log(result);
+        }).catch((error) => {
+            console.log(error);
+        });
+
+
+        // let onFulFill = (result) => {
+        //     console.log(result);
+        // }
+
+        // let onFail = (error) => {
+        //     console.log(error);
+        // }
+
+        // prom(true).then(onFulFill).catch(onFail);
+
+
+        // let complete = 0;// complete is a boolean
+
+        // let promise = new Promise(function (pass, fail) {
+        //     if (complete) {
+        //         pass("SUCCESS");
+        //     }
+        //     else {
+        //         fail("UNSUCCESS");
+        //     }
+        // });
+
+        // promise is an object not a function so no round braces.
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
